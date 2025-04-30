@@ -1,0 +1,51 @@
+/* Header container */
+.abc {
+  display: flex;
+  justify-content: space-between; /* Space between links */
+  align-items: center;
+  background-color: #a28089; /* Blue background */
+  padding: 15px 30px; /* Padding for the header */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  font-family: Arial, sans-serif;
+}
+
+/* Logo or brand name */
+.abc .logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Navigation links */
+.abc a {
+  color: #fff; /* White text */
+  text-decoration: none;
+  margin: 0 15px; /* Spacing between links */
+  font-size: 16px;
+  font-weight: bold;
+  transition: color 0.2s ease-in-out;
+}
+
+/* Hover effect for links */
+.abc a:hover {
+  color: #f9f9f9; /* Slightly lighter white on hover */
+}
+
+/* Active link styling */
+.abc a.active {
+  border-bottom: 2px solid #fff; /* Underline active link */
+  color: #f9f9f9; /* Slightly lighter white */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .abc {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align links to the left */
+  }
+
+  .abc a {
+    margin: 10px 0; /* Add spacing between links */
+  }
+}
