@@ -9,7 +9,7 @@ const Login = () => {
   });
 
   const handleSignup = (e) => {
-    const { name, value } = e.target;
+    const {name, value} = e.target;
     setData({
       ...data,
       [name]: value,
